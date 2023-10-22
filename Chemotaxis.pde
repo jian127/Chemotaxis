@@ -40,18 +40,7 @@ Jian()
 void move(){
 myX = myX + ((int)(Math.random()*4-2));
 myY = myY + ((int)(Math.random()*4-2));
-if(myX == 1000){
-myX = 0;
-}
-if(myX == 0){
-myX = 1000;
-}
-if(myY == 1000){
-myY = 0;
-}
-if(myY == 0){
-myX = 1000;
-}
+
 }
   
 void show(){
@@ -75,7 +64,7 @@ y = y + ((int)(Math.random()*4-2));
 }
 void show(){
   fill(255,0,0);
-square(x,y,z);
+rect(x,y,z,z);
 }
 
 
