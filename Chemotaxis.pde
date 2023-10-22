@@ -21,9 +21,7 @@ for(int a = 0; a < ballz.length; a++){
 ballz[a].show();
 ballz[a].move();
 }
-if((dist(ball.myX,ball.myY, ballz.x, balls.y)) < myZ){
 
-}
 }
 void mouseX(){
 
@@ -37,11 +35,11 @@ int myZ;
 Jian()
 {
  myX = myY = 500;
- myZ = (int)(Math.random()*20 + 5);
+ myZ = ((int)(Math.random()*20 + 5));
 }
 void move(){
-myX = myX + (int)(Math.random()*4-2);
-myY = myY + (int)(Math.random()*4-2);
+myX = myX + ((int)(Math.random()*4-2));
+myY = myY + ((int)(Math.random()*4-2));
 if(myX == 1000){
 myX = 0;
 }
@@ -57,7 +55,7 @@ myX = 1000;
 }
   
 void show(){
-  fill((int)(Math.random()*255 + 1),(int)(Math.random()*255 + 1),(int)(Math.random()*255 + 1));
+  fill(((int)(Math.random()*255 + 1)),((int)(Math.random()*255 + 1)),((int)(Math.random()*255 + 1)));
 ellipse(myX, myY, myZ, myZ);
 }
 }
@@ -66,13 +64,13 @@ int x;
 int y;
 int z;
   Balls(){
-   x = (int)(Math.random()*1001);
-   y = (int)(Math.random()*1001);
+   x = ((int)(Math.random()*1001));
+   y = ((int)(Math.random()*1001));
    z = 15;
   }
 void move(){
-x = x + (int)(Math.random()*4-2);
-y = y + (int)(Math.random()*4-2);
+x = x + ((int)(Math.random()*4-2));
+y = y + ((int)(Math.random()*4-2));
 
 }
 void show(){
